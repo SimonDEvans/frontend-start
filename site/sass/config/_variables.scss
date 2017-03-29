@@ -1,0 +1,110 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+
+/* ============================================
+   Colours
+*/
+
+// Colour vars
+$color--teal:       #2eb1b0;
+$color--green:      #68aa6c;
+$color--orange:     #fb5a40;
+$color--yellow:     #f5c157;
+$color--dark-grey:  #2b3033;
+$color--white:      #fff;
+
+// Defaults
+$color--foreground: $color--dark-grey;
+$color--background: $color--white;
+$color--brand: $color--orange;
+
+// Theme colours
+$color--primary: $color--teal;
+$color--secondary: $color--green;
+$color--tertiary: $color--orange;
+$color--quaternary: $color--yellow;
+
+// Type colours
+$color--default: #000;
+$color--link: $color--orange;
+
+
+/* ============================================
+   Typography
+   :: Default to system font stack
+*/
+$font--primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$font--secondary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$base-font-size: 16px;
+$base-line-height: 25px;
+$font-sizes: (
+
+    // non-standard large sizes
+    giga:    80px,
+    mega:    60px,
+    kilo:    48px,
+
+    // standard sizes
+    alpha:   42px,
+    beta:    32px,
+    gamma:   28px,
+    delta:   22px,
+    epsilon: 20px,
+    zeta:    16px,
+
+    // non-standard small sizes
+    milli:   14px
+);
+
+
+/* ============================================
+  Wrappers and grids
+*/
+$wrapper-width: 1200px;
+$gutter: 40px;
+
+
+/* ============================================
+   Breakpoints
+*/
+$breakpoints: (
+    'wide'          '(max-width: 1440px)',
+    'desktop'       '(max-width: 1330px)',
+    'laptop'        '(max-width: 1000px)',
+    'tablet'        '(max-width: 700px)',
+    'mobile'        '(max-width: 650px)',
+);
+
+$breakpoint-has-widths: (
+    'wide',
+    'desktop',
+    'laptop',
+    'tablet',
+    'mobile'
+);
+
+
+/* ============================================
+  Transition speeds
+*/
+$default-transition-speed: 300ms;
+
+
+/* ============================================
+  Z-index 
+*/
+$z-alpha:       7;
+$z-beta:        6;
+$z-gamma:       5;
+$z-delta:       4;
+$z-epsilon:     3;
+$z-zeta:        2;
+$z-milli:       1;
+$z-base:        0;
+$z-hidden:     -1;
+
+$z-giga:        9999;
+$z-mega:        110;
+$z-kilo:        109;
