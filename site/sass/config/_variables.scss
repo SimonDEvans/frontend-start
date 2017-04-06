@@ -15,20 +15,44 @@ $color--yellow:     #f5c157;
 $color--dark-grey:  #2b3033;
 $color--white:      #fff;
 
+
+$color--blue: #0d61b5;
+$color--light-blue: #1174cb;
+$color--cyan: #48b6e4;
+$color--yellow: #f9df32;
+$color--purple: #ac2a73;
+$color--dark-grey: #435663;
+$color--light-grey: #d0d0d0;
+$color--bright-grey: #f5f4f4;
+
 // Defaults
 $color--foreground: $color--dark-grey;
 $color--background: $color--white;
 $color--brand: $color--orange;
 
 // Theme colours
-$color--primary: $color--teal;
-$color--secondary: $color--green;
-$color--tertiary: $color--orange;
+$color--primary: $color--blue;
+$color--secondary: $color--light-blue;
+$color--tertiary: $color--cyan;
 $color--quaternary: $color--yellow;
+$color--quinary: $color--purple;
+$color--senary: $color--dark-grey;
+$color--septenary: $color--bright-grey;
 
 // Type colours
 $color--default: #000;
 $color--link: $color--orange;
+
+// Button colours
+$button-colours: (
+    primary:    (bg: $color--primary, color: #fff),
+    secondary:  (bg: $color--secondary, color: #fff),
+    tertiary:   (bg: $color--tertiary, color: #fff),
+    quaternary: (bg: $color--quaternary, color: #000),
+    quinary:    (bg: $color--quinary, color: #fff),
+    senary:     (bg: $color--senary, color: #fff),
+    septenary:  (bg: $color--septenary, color: #000)
+);
 
 
 /* ============================================
