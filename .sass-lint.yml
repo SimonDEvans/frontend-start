@@ -44,7 +44,7 @@ rules:
     - 1
     - convention: hyphenatedbem
   force-pseudo-nesting: 0
-  nesting-depth: 1
+  nesting-depth: 0
   force-attribute-nesting: 0
   force-element-nesting: 1
   no-qualifying-elements: 0
