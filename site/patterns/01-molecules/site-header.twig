@@ -1,1 +1,14 @@
-<header class="site-header"></header>
+<header class="site-header">
+  <div class="wrapper wrapper--relative">
+    {% spaceless %}
+      <div class="grid">
+        <div class="grid__item one-third">
+          Logo
+        </div>
+        <div class="grid__item two-thirds">
+          {% include "molecules-main-menu" %}
+        </div>
+      </div>
+    {% endspaceless %}
+  </div>
+</header>

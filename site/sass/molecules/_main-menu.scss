@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $MAIN MENU
+\*------------------------------------*/
+
+.main-menu {
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+
+        > a {
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+        }
+    }
+}

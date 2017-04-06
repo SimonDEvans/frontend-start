@@ -7,15 +7,7 @@
    Colours
 */
 
-// Colour vars
-$color--teal:       #2eb1b0;
-$color--green:      #68aa6c;
-$color--orange:     #fb5a40;
-$color--yellow:     #f5c157;
-$color--dark-grey:  #2b3033;
-$color--white:      #fff;
-
-
+// Main colours
 $color--blue: #0d61b5;
 $color--light-blue: #1174cb;
 $color--cyan: #48b6e4;
@@ -27,8 +19,7 @@ $color--bright-grey: #f5f4f4;
 
 // Defaults
 $color--foreground: $color--dark-grey;
-$color--background: $color--white;
-$color--brand: $color--orange;
+$color--brand: $color--blue;
 
 // Theme colours
 $color--primary: $color--blue;
@@ -41,7 +32,7 @@ $color--septenary: $color--bright-grey;
 
 // Type colours
 $color--default: #000;
-$color--link: $color--orange;
+$color--link: #000;
 
 // Button colours
 $button-colours: (
@@ -86,7 +77,7 @@ $font-sizes: (
 /* ============================================
     Wrappers and grids
 */
-$wrapper-width: 1200px;
+$wrapper-width: 1300px;
 $gutter: 40px;
 
 
