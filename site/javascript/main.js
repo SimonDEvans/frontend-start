@@ -1,32 +1,55 @@
-
-/*
-    Example of importing and using classes
-*/
-
-import MobileMenu from './components/MobileMenu';
-
-let mobileNavigation = new MobileMenu({
-    target      : '#app__nav',
-    inSpeed     : 900,
-    outSpeed    : 900
-});
-
-console.log( 'hello', mobileNavigation );
-
-
-/*
-    Example of importing and using functions
-*/
-
 import $ from './globals';
-import positionSticky from './utility/position-sticky';
 
-positionSticky( $('.cards__title'), $( '.app__page > .content' ) );
+/* ============================================
+    Quick Links
+ */
+var quickLinks = function() {
 
-$('.cards__title').on( 'stuck', function( e ){
-    console.log( 'ON, Demonstrate custom events on elements', e );
-});
+    var $trigger            = $('.site-header__quick-links-button'),
+        $siteContainer      = $('.site-container'),
+        siteContainerPush   = 'site-container--push',
+        displayBuffer       = 10,
+        state               = {
+            open    : false,
+            busy    : false
+        };
 
-$('.cards__title').on( 'unstuck', function( e ){
-    console.log( 'OFF, Demonstrate custom events on elements', e );
-});
+    function open() {
+        if( !state.busy ){
+            state.busy = true;
+            
+            setTimeout(function(){
+                $siteContainer.addClass(siteContainerPush);
+                state.open = true;
+                state.busy = false;
+            }, displayBuffer );
+        }
+    }
+
+    function close() {
+        if( !state.busy ){
+            state.busy = true;
+
+            setTimeout(function(){
+                $siteContainer.removeClass(siteContainerPush);
+                state.open = false;
+                state.busy = false;
+            }, displayBuffer );
+        }
+    }
+
+    function toggle(){
+        if( state.open ) {
+            close();
+        } else {
+            open();
+        }
+    }
+
+    $trigger.on( 'click', function() {
+        toggle();
+    });
+
+};
+
+quickLinks();
