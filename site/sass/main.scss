@@ -56,13 +56,16 @@
 @import 'atoms/swatches';
 @import 'atoms/inputs';
 @import 'atoms/wrapper';
+@import 'atoms/logo';
 
 
 /*------------------------------------*\
     $MOLECULES
 \*------------------------------------*/
 @import 'molecules/site-header';
+@import 'molecules/quick-links';
 @import 'molecules/main-menu';
+@import 'molecules/hero';
 
 
 /*------------------------------------*\
@@ -74,6 +77,7 @@
     $TEMPLATES
 \*------------------------------------*/
 @import 'templates/welcome';
+
 
 /*------------------------------------*\
     $PAGES

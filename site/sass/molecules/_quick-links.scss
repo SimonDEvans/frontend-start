@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $QUICK LINKS
+\*------------------------------------*/
+
+.quick-links {
+    height: 400px;
+    background-color: $color--senary;
+    transform: translate3d(0, -100%, 0);
+
+    &--expand {
+        transform: translate3d(0, 0, 0);
+    }
+}
